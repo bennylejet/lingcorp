@@ -8,6 +8,11 @@ import { useState } from 'react';
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>LINGCORP</title>
+        <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <div className={styles.titleContainer}>
         <div className={styles.title}>
           <h1 className={styles.light}>LING</h1>

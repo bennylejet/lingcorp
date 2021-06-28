@@ -1,9 +1,14 @@
 import styles from '../styles/Mining.module.css'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Mining() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>LINGCORP | MINING</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <div className={styles.titleContainer}>
         <Link href="/">
           <div className={styles.title}>

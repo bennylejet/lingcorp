@@ -2,10 +2,15 @@ import styles from '../styles/About.module.css'
 import Image from 'next/image'
 import leslie from '../public/colorleslie.png'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function About() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>LINGCORP | ABOUT</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <div className={styles.titleContainer}>
         <Link href="/">
           <div className={styles.title}>
