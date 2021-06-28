@@ -12,10 +12,7 @@
   overflow-x: hidden;
 
   background-color: #181a1b;
-
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  background-size: cover;
 }
 
 .title {
@@ -29,33 +26,8 @@
   font-size: calc(24px + (48 - 14) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
   z-index: 10;
-}
 
-.red {
-  color: #f24141;
-}
-
-.light {
-  color:#fdfdfd;
-}
-
-.links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-
-  width: 100%;
-  
-  animation: fadeInAnimation 1s ease 1s 1 normal forwards;
-  opacity: 0;
-
-  color: #fdfdfd;
-}
-
-.imageContainer {
-  width: 50%;
-  height: 100%;
+  cursor: pointer;
 }
 
 .titleContainer {
@@ -66,11 +38,24 @@
   margin: auto;
 }
 
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-   }
+.red {
+  color: #f24141;
+}
+
+.light {
+  color:#fdfdfd;
+}
+
+.mining {
+  margin: 0;
+  line-height: 1.15;
+  font-size: calc(24px + (32 - 14) * ((100vw - 300px) / (1600 - 300)));
+  color:#fdfdfd;
+}
+
+.content {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  color:#fdfdfd;
 }
